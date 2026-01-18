@@ -1,56 +1,56 @@
-# Griya Asri Kost Management System
+# Sistem Manajemen Kost Griya Asri
 
-A modern web application for managing boarding house (kost) operations, built with Laravel 12 and Tailwind CSS.
+Aplikasi web modern untuk mengelola operasional kost (rumah kos), dibangun dengan Laravel 12 dan Tailwind CSS.
 
-## Project Overview
+## Ringkasan Proyek
 
-Griya Asri is a comprehensive kost management system designed for boarding house owners and operators in Surabaya, Indonesia. The system provides an intuitive interface for managing rooms, galleries, and guest information.
+Griya Asri adalah sistem manajemen kost yang komprehensif, dirancang untuk pemilik dan pengelola rumah kos di Surabaya, Indonesia. Sistem ini menyediakan antarmuka yang intuitif untuk mengelola kamar, galeri, dan informasi tamu.
 
-## Features
+## Fitur
 
-- **Landing Page**: Modern, responsive landing page with image gallery slider
-- **Room Management**: Add, edit, and manage room listings with detailed information
-- **Gallery Management**: Upload and organize property images
-- **Admin Dashboard**: Secure admin panel for content management
-- **Dark Mode Support**: Built-in dark mode for better user experience
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Halaman Landing**: Halaman utama modern dan responsif dengan slider galeri gambar
+- **Manajemen Kamar**: Tambah, edit, dan kelola daftar kamar dengan informasi lengkap
+- **Manajemen Galeri**: Unggah dan organisir gambar properti
+- **Dashboard Admin**: Panel admin yang aman untuk manajemen konten
+- **Dukungan Mode Gelap**: Mode gelap bawaan untuk pengalaman pengguna yang lebih baik
+- **Desain Responsif**: Dioptimalkan untuk desktop, tablet, dan perangkat mobile
 
-## Technology Stack
+## Teknologi yang Digunakan
 
 - **Backend**: Laravel 12 (PHP 8.2+)
 - **Frontend**: Blade Templates, Tailwind CSS, Alpine.js
-- **Database**: SQLite (configurable to MySQL/PostgreSQL)
+- **Database**: SQLite (dapat dikonfigurasi ke MySQL/PostgreSQL)
 - **Build Tools**: Vite
-- **Authentication**: Laravel Sanctum
+- **Autentikasi**: Laravel Sanctum
 
-## Installation
+## Instalasi
 
-### Prerequisites
+### Prasyarat
 
-- PHP 8.2 or higher
+- PHP 8.2 atau lebih tinggi
 - Composer
-- Node.js and NPM
-- SQLite or MySQL
+- Node.js dan NPM
+- SQLite atau MySQL
 
-### Steps
+### Langkah-langkah
 
-1. Clone the repository:
+1. Clone repository:
 ```bash
 git clone https://github.com/abyanrfq/griya-asri.git
 cd griya-asri/kosku
 ```
 
-2. Install PHP dependencies:
+2. Install dependencies PHP:
 ```bash
 composer install
 ```
 
-3. Install JavaScript dependencies:
+3. Install dependencies JavaScript:
 ```bash
 npm install
 ```
 
-4. Create environment file:
+4. Buat file environment:
 ```bash
 cp .env.example .env
 ```
@@ -60,52 +60,52 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-6. Run database migrations:
+6. Jalankan migrasi database:
 ```bash
 php artisan migrate
 ```
 
-7. Seed the database (optional):
+7. Seed database (opsional):
 ```bash
 php artisan db:seed
 ```
 
-8. Build frontend assets:
+8. Build asset frontend:
 ```bash
 npm run build
 ```
 
-9. Start the development server:
+9. Jalankan development server:
 ```bash
 php artisan serve
 ```
 
-The application will be available at `http://localhost:8000`
+Aplikasi akan tersedia di `http://localhost:8000`
 
-## Project Structure
+## Struktur Proyek
 
 ```
 kosku/
 ├── app/
-│   ├── Http/Controllers/    # Application controllers
-│   ├── Models/              # Eloquent models
+│   ├── Http/Controllers/    # Controller aplikasi
+│   ├── Models/              # Model Eloquent
 │   └── Providers/           # Service providers
 ├── database/
-│   ├── migrations/          # Database migrations
-│   └── seeders/            # Database seeders
-├── public/                 # Public assets
+│   ├── migrations/          # Migrasi database
+│   └── seeders/            # Seeder database
+├── public/                 # Asset publik
 ├── resources/
-│   ├── css/               # Stylesheets
-│   ├── js/                # JavaScript files
-│   └── views/             # Blade templates
-└── routes/                # Application routes
+│   ├── css/               # Stylesheet
+│   ├── js/                # File JavaScript
+│   └── views/             # Template Blade
+└── routes/                # Route aplikasi
 ```
 
-## Configuration
+## Konfigurasi
 
 ### Database
 
-Edit the `.env` file to configure your database connection:
+Edit file `.env` untuk mengkonfigurasi koneksi database:
 
 ```env
 DB_CONNECTION=sqlite
@@ -117,7 +117,7 @@ DB_CONNECTION=sqlite
 # DB_PASSWORD=
 ```
 
-### Application Settings
+### Pengaturan Aplikasi
 
 ```env
 APP_NAME="Griya Asri"
@@ -126,58 +126,58 @@ APP_DEBUG=true
 APP_URL=http://localhost:8000
 ```
 
-## Usage
+## Cara Penggunaan
 
-### Admin Access
+### Akses Admin
 
-1. Navigate to `/login`
-2. Use the credentials set during seeding or create an admin user
-3. Access the admin dashboard to manage content
+1. Buka halaman `/login`
+2. Gunakan kredensial yang dibuat saat seeding atau buat user admin baru
+3. Akses dashboard admin untuk mengelola konten
 
-### Managing Gallery
+### Mengelola Galeri
 
-1. Login to admin panel
-2. Navigate to Gallery section
-3. Upload images with titles and descriptions
-4. Images will appear on the landing page slider
+1. Login ke panel admin
+2. Navigasi ke bagian Galeri
+3. Unggah gambar dengan judul dan deskripsi
+4. Gambar akan muncul di slider halaman landing
 
-### Managing Rooms
+### Mengelola Kamar
 
-1. Access the Rooms section in admin panel
-2. Add room details including price, facilities, and images
-3. Rooms will be displayed on the public listing page
+1. Akses bagian Kamar di panel admin
+2. Tambahkan detail kamar termasuk harga, fasilitas, dan gambar
+3. Kamar akan ditampilkan di halaman daftar publik
 
 ## Development
 
-### Running in Development Mode
+### Menjalankan Mode Development
 
 ```bash
-# Terminal 1: Start Laravel development server
+# Terminal 1: Jalankan Laravel development server
 php artisan serve
 
-# Terminal 2: Watch and compile assets
+# Terminal 2: Watch dan compile asset
 npm run dev
 ```
 
-### Building for Production
+### Build untuk Production
 
 ```bash
 npm run build
 php artisan optimize
 ```
 
-## License
+## Lisensi
 
-This project is proprietary software. All rights reserved.
+Proyek ini adalah perangkat lunak proprietary. Hak cipta dilindungi.
 
-## Contact
+## Kontak
 
-For inquiries about Griya Asri Kost:
+Untuk informasi tentang Kost Griya Asri:
 
-- **Location**: Jl. Rungkut Asri Timur XIII No.90, Rungkut Kidul, Surabaya
+- **Lokasi**: Jl. Rungkut Asri Timur XIII No.90, Rungkut Kidul, Surabaya
 - **WhatsApp**: +62 821-4326-9626
-- **Mamikos**: [View Listing](https://mamikos.com/room/kost-surabaya-kost-putri-eksklusif-kost-griya-asri-rungkut-surabaya)
+- **Mamikos**: [Lihat Listing](https://mamikos.com/room/kost-surabaya-kost-putri-eksklusif-kost-griya-asri-rungkut-surabaya)
 
-## Acknowledgments
+## Penghargaan
 
-Built with Laravel framework and modern web technologies to provide a seamless kost management experience.
+Dibangun dengan framework Laravel dan teknologi web modern untuk memberikan pengalaman manajemen kost yang mulus.
