@@ -1,1 +1,10 @@
-vendor
+# Include everything needed for deployment
+# Don't ignore kosku folder
+node_modules
+.git
+.env.local
+.env.*.local
+storage/logs
+storage/framework/cache
+storage/framework/sessions
+storage/framework/testing
