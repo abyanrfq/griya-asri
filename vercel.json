@@ -1,10 +1,20 @@
 {
     "version": 2,
-    "outputDirectory": "kosku/public",
+    "functions": {
+        "kosku/public/index.php": {
+            "runtime": "vercel-php@0.8.0"
+        }
+    },
+    "routes": [
+        {
+            "src": "^/(.*)$",
+            "dest": "/kosku/public/index.php"
+        }
+    ],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
-        "APP_URL": "https://griya-asri-sby.vercel.app",
+        "APP_URL": "https://griya-asri-v3.vercel.app",
         "APP_KEY": "base64:70UnJ6hVJr3EY9JJDdy336ovApo24AOA5d5k05cW8g4=",
         "DB_CONNECTION": "sqlite",
         "CACHE_DRIVER": "array",
