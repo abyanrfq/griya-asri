@@ -9,8 +9,8 @@
     },
     "routes": [
         {
-            "src": "^/public/(.*)",
-            "dest": "/api/index.php"
+            "src": "^/storage/(.*)",
+            "dest": "/kosku/storage/$1"
         },
         {
             "src": "^/(.*)$",
@@ -28,6 +28,5 @@
         "QUEUE_CONNECTION": "sync",
         "SESSION_DRIVER": "cookie",
         "LOG_CHANNEL": "stderr"
-    },
-    "outputDirectory": "kosku/public"
+    }
 }
