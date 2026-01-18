@@ -1,18 +1,21 @@
+# Ignore these files/folders
 .env
 .env.local
 .env.*.local
 .git
-.gitignore
 node_modules
 npm-debug.log
 yarn-error.log
 .DS_Store
-*.log
 .idea
 .vscode
 .next
 out
-build
-dist
 coverage
 .vercel
+storage/logs
+storage/framework/cache
+
+# BUT INCLUDE vendor folder!
+!vendor
+!kosku/vendor
