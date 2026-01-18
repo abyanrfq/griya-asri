@@ -1,1 +1,36 @@
-# Empty - add entries as needed
+# Laravel & Environment
+kosku/.env
+kosku/.env.backup
+kosku/.env.production
+
+# Dependencies
+kosku/vendor/
+kosku/node_modules/
+
+# Storage & Cache
+kosku/storage/logs/
+kosku/storage/framework/cache/
+kosku/storage/framework/sessions/
+kosku/storage/framework/views/
+
+# Database
+kosku/database/*.sqlite
+kosku/database/*.sqlite-journal
+
+# IDE & Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build & Compiled
+kosku/public/hot
+kosku/public/storage
+kosku/public/build/
+
+# Misc
+npm-debug.log
+yarn-error.log
+.phpunit.result.cache
