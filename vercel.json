@@ -1,11 +1,10 @@
 {
     "version": 2,
-    "buildCommand": "cd kosku && composer install --no-dev",
     "outputDirectory": "kosku/public",
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
-        "APP_URL": "https://griya-asri.vercel.app",
+        "APP_URL": "https://griya-asri-sby.vercel.app",
         "APP_KEY": "base64:70UnJ6hVJr3EY9JJDdy336ovApo24AOA5d5k05cW8g4=",
         "DB_CONNECTION": "sqlite",
         "CACHE_DRIVER": "array",
