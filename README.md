@@ -1,10 +1,10 @@
-# Sistem Manajemen Kost Griya Asri
+# Profil Kost Griya Asri
 
-Aplikasi web modern untuk mengelola operasional kost (rumah kos), dibangun dengan Laravel 12 dan Tailwind CSS.
+Aplikasi profile kost (rumah kos), dibangun dengan Laravel 12 dan Tailwind CSS.
 
 ## Ringkasan Proyek
 
-Griya Asri adalah sistem manajemen kost yang komprehensif, dirancang untuk pemilik dan pengelola rumah kos di Surabaya, Indonesia. Sistem ini menyediakan antarmuka yang intuitif untuk mengelola kamar, galeri, dan informasi tamu.
+Griya Asri adalah web profile, dirancang untuk pemilik rumah kos di Surabaya. Web ini menyediakan profile kost, galeri, dan informasi kost.
 
 ## Fitur
 
@@ -101,31 +101,6 @@ kosku/
 └── routes/                # Route aplikasi
 ```
 
-## Konfigurasi
-
-### Database
-
-Edit file `.env` untuk mengkonfigurasi koneksi database:
-
-```env
-DB_CONNECTION=sqlite
-# DB_CONNECTION=mysql
-# DB_HOST=127.0.0.1
-# DB_PORT=3306
-# DB_DATABASE=kosku
-# DB_USERNAME=root
-# DB_PASSWORD=
-```
-
-### Pengaturan Aplikasi
-
-```env
-APP_NAME="Griya Asri"
-APP_ENV=local
-APP_DEBUG=true
-APP_URL=http://localhost:8000
-```
-
 ## Cara Penggunaan
 
 ### Akses Admin
@@ -170,13 +145,6 @@ php artisan optimize
 
 Proyek ini adalah perangkat lunak proprietary. Hak cipta dilindungi.
 
-## Kontak
-
-Untuk informasi tentang Kost Griya Asri:
-
-- **Lokasi**: Jl. Rungkut Asri Timur XIII No.90, Rungkut Kidul, Surabaya
-- **WhatsApp**: +62 821-4326-9626
-- **Mamikos**: [Lihat Listing](https://mamikos.com/room/kost-surabaya-kost-putri-eksklusif-kost-griya-asri-rungkut-surabaya)
 
 ## Penghargaan
 
