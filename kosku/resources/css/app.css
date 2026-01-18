@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* HAPUS baris ini: */
+/* @variant dark (&:where(.dark, .dark *)); */
+
+/* GANTI dengan: */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    --color-brand: #009548;
+    --color-secondary: #85594F;
+    --color-bg: #ffffff;
+    --color-text: #000000;
+    --color-text-dark: #EDEDEC;
+    --color-muted: #706f6c;
+    --color-muted-dark: #A1A09A;
+    --color-border: #e3e3e0;
+    --color-border-dark: #3E3E3A;
+    --color-paper: #FDFDFC;
+    --color-paper-dark: #0a0a0a;
+    --color-surface-dark: #161615;
+    --color-info: #3B82F6;
+
+    /* Tambahkan color palette untuk dark mode */
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-gray-50: #f9fafb;
+    --color-gray-100: #f3f4f6;
+    --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #6b7280;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    --color-gray-800: #1f2937;
+    --color-gray-900: #111827;
+}
