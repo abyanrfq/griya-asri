@@ -1,10 +1,18 @@
-# Include everything needed for deployment
-# Don't ignore kosku folder
-node_modules
-.git
+.env
 .env.local
 .env.*.local
-storage/logs
-storage/framework/cache
-storage/framework/sessions
-storage/framework/testing
+.git
+.gitignore
+node_modules
+npm-debug.log
+yarn-error.log
+.DS_Store
+*.log
+.idea
+.vscode
+.next
+out
+build
+dist
+coverage
+.vercel

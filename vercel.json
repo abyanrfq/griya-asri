@@ -1,23 +1,25 @@
 {
     "version": 2,
     "functions": {
-        "kosku/public/index.php": {
+        "api/index.php": {
             "runtime": "vercel-php@0.8.0"
         }
     },
     "routes": [
         {
-            "src": "^/(.*)$",
-            "dest": "/kosku/public/index.php"
+            "src": "/(.*)",
+            "dest": "/api/index.php"
         }
     ],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
         "APP_URL": "https://griya-asri-v3.vercel.app",
+        "APP_NAME": "Kosku",
         "APP_KEY": "base64:70UnJ6hVJr3EY9JJDdy336ovApo24AOA5d5k05cW8g4=",
         "DB_CONNECTION": "sqlite",
         "CACHE_DRIVER": "array",
+        "QUEUE_CONNECTION": "sync",
         "SESSION_DRIVER": "cookie",
         "LOG_CHANNEL": "stderr"
     }

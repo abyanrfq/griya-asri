@@ -1,3 +1,3 @@
 <?php
-// Direct path to Laravel bootstrap
-require_once '/var/task/user/kosku/public/index.php';
+// Direct path from /var/task/user/api/ to Laravel public/index.php
+require_once dirname(__DIR__) . '/kosku/public/index.php';
